@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animation</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     <script src="jquery-3.7.1.js"></script>
+     <script src="jquery.min.js"></script>
+     <style>
+          /* .container{} */
+          
+
+     </style>
+
+</head>
+<body>
+     <div class="container">
+          <div>
+               <h3>The jQuery animate() is used to create custom animations</h3>
+               <p style="color: crimson;">
+                    <i>Syntax: $(selector).amimate({params},speed,callback)</i>
+               </p>
+               <strong>
+                    <ul>
+                         <li>The required params defines the css properties to be animated</li>
+                         <li>The optional speed parameter defines the duration of the effect</li>
+                         <li>The optional callback parameter is a function to be executed after the animation completes</li>
+                    </ul>
+               </strong>
+          </div>
+
+          <div class="container">
+               <div class="row flex-lg-row">
+                    <div class="col-6 col-md-4 text-center animate__animated animate__fadeInLeft ">
+                         <div class="animate__fadeInRight  card first">
+                              <img src="Victoria_Memorial_situated_in_Kolkata.jpg" alt="" style="height: 226px; width: 406px;" class="img-thumbnail">
+                              <div class="card-body">
+                                   <h3>
+                                        Victoria Memorial: A Symbol of Colonial Grandeur
+                                   </h3>
+                                   <p class="text-lead">
+                                        One of Kolkata's most iconic landmarks, the Victoria Memorial stands as a testament to the 
+                                        city's colonial past. Built between 1906 and 1921, this majestic white marble structure was 
+                                        dedicated to Queen Victoria. Surrounded by lush gardens, the memorial combines British and 
+                                        Mughal architectural styles, creating a stunning fusion of cultures. Its museum houses a 
+                                        vast collection of artifacts, paintings, and sculptures that showcase the rich history of 
+                                        Kolkata during the British Raj.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-6 col-md-4 text-center">
+                         <div class="animate__fadeInRight card second animate__animated animate__fadeInLeft ">
+                              <img src="howrah-bridge-759-pixabay.webp" alt="" class="img-thumbnail" style="height: 226px;">
+                              <div class="card-body">
+                                   <h3>
+                                        Howrah Bridge: Connecting Past and Present
+                                   </h3>
+                                   <p class="text-lead">
+                                        Spanning the Hooghly River, the Howrah Bridge is an engineering marvel that has become synonymous with Kolkata.
+                                        Completed in 1943, this cantilever bridge is one of the busiest in the world, connecting the city with its 
+                                        bustling suburb, Howrah. The bridge, without any structural support in the river, is a symbol of Kolkata's 
+                                        resilience and progress. Illuminated at night, it provides a breathtaking sight and has been featured in 
+                                        numerous films, showcasing its cultural significance.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-6 col-md-4 text-center">
+                         <div class="card third animate__animated animate__fadeInLeft ">
+                              <img src="Dakshineshwar-Kali-Temple-India.webp" alt="" class="img-fluid img-thumbnail rounded d-block" style="height: 226px;">
+                              <div class="card-body">
+                                   <h3 class="card-title">
+                                        Dakshineswar Kali Temple: Serenity on the Ganges
+                                   </h3>
+                                   <p class="text-lead">
+                                        Nestled on the serene eastern bank of the Hooghly River, the Dakshineswar Kali Temple, built in 1855 by Rani Rashmoni, 
+                                        stands as a revered Hindu pilgrimage site dedicated to Goddess Kali. Its distinctive design and intricate architecture 
+                                        not only attract devout worshippers but also capture the fascination of curious tourists. The temple complex, beyond 
+                                        its main shrine, encompasses smaller spiritual sanctuaries, peaceful courtyards, and a tranquil bathing ghat along 
+                                        the flowing river. 
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center align-items-centet my-5">
+                         <button href="#" class="btn btn-info btn-lg text-white prev-bt">Click Here</button>
+                    </div>
+               </div>
+          </div>
+
+          <section>
+               <div class="container">
+                    <div class="row text-center">
+                         <div class="col-lg-12">
+                              <div>
+                                   <p class="lead" >
+                                        The stop() method is used to stop any animation or effect before it is finished. <br>
+                                        Syntax <i  style="color: crimson;">$(selector).stop(stopAll,goToEnd)</i>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row flex-lg-row m-auto justify-content-center">
+                         <div class="d-flex flex-row justify-content-center align-items-centet my-5">
+                              <button href="#" class="btn btn-success btn-lg text-white nxt-bt">Click Here</button>
+                         </div>
+                         <div class="col-md-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                              <div class="card more">
+                                   <img src="/1671970320_1651731527_40092ed4-a98f-472f-9962-cc1af257.jpg" alt="" class="img-fluid img-thumbnail rounded d-block" style="height: 226px;">
+                                   <div class="card-body">
+                                        <h3 class="card-title">
+                                             St. Paul's Cathedral: Gothic Grandeur
+
+                                        </h3>
+                                        <p class="text-lead">
+                                             St. Paul's Cathedral, built in 1847, is an iconic Anglican church located in the heart of Kolkata. 
+                                             With its Gothic architecture, towering spires, and stained glass windows, the cathedral stands as 
+                                             a symbol of Kolkata's colonial heritage. The tranquil churchyard and the intricate carvings inside 
+                                             make it a peaceful retreat in the midst of the bustling city. It is one of the most visited places in Kolkata.
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-md-4 animate__animated animate__fadeInRight animate__delay-1s">
+                              <div class="card more">
+                                   <img src="banner2.jpg" alt="" class="img-fluid img-thumbnail rounded d-block" style="height: 226px;">
+                                   <div class="card-body">
+                                        <h3 class="card-title">
+                                             Indian Museum: A Treasure Trove of Artifacts
+                                        </h3>
+                                        <p class="text-lead">
+                                             Established in 1814, the Indian Museum in Kolkata is one of the oldest and largest museums in India. 
+                                             Located in Chowringhee, it houses an extensive collection of artifacts, including sculptures, 
+                                             paintings, mummies, and ancient relics from various civilizations. The museum's unique 
+                                             exhibits provide a journey through India's diverse history, making it a must-visit 
+                                             for history enthusiasts. 
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                         
+                    </div>
+               </div>
+          </section>
+          
+          <script>
+               //const wrapper = document.querySelectorAll(".cardWrap");
+
+               // wrapper.forEach(element => {
+               // let state = {
+               // mouseX: 0,
+               // mouseY: 0,
+               // height: element.clientHeight,
+               // width: element.clientWidth
+               // };
+
+               // element.addEventListener("mousemove", ele => {
+               // const card = element.querySelector(".card");
+               // const cardBg = card.querySelector(".cardBg");
+               // state.mouseX = ele.pageX - element.offsetLeft - state.width / 2;
+               // state.mouseY = ele.pageY - element.offsetTop - state.height / 2;
+
+               // // parallax angle in card
+               // const angleX = (state.mouseX / state.width) * 30;
+               // const angleY = (state.mouseY / state.height) * -30;
+               // card.style.transform = `rotateY(${angleX}deg) rotateX(${angleY}deg) `;
+
+               // // parallax position of background in card
+               // const posX = (state.mouseX / state.width) * -40;
+               // const posY = (state.mouseY / state.height) * -40;
+               // cardBg.style.transform = `translateX(${posX}px) translateY(${posY}px)`;
+               // });
+
+               // element.addEventListener("mouseout", () => {
+               // const card = element.querySelector(".card");
+               // const cardBg = card.querySelector(".cardBg");
+               // card.style.transform = `rotateY(0deg) rotateX(0deg) `;
+               // cardBg.style.transform = `translateX(0px) translateY(0px)`;
+               // });
+               // });
+
+               $(document).ready(function(){
+                    // $("button").click(function(){
+                    //      $(".first").animate({left: "870px",opacity: "0.5",},700),
+                    //      $(".second").animate({right: "430px",opacity: "0.5",},900),
+                    //      $(".third").animate({right: "430px",opacity: "0.5",},1100)
+                    // });
+                    $("button").click(function(){
+                         var fDiv = $(".first");
+                         var sDiv = $(".second");
+                         var tDiv = $(".third");
+                         fDiv.animate({left: "870px",opacity: "0.5", },700),
+                         sDiv.animate({right: "430px",opacity: "0.5",},900),
+                         tDiv.animate({right: "430px",opacity: "0.5",},1100)
+                    });
+                    $(".lead").click(function(){
+                         $(".more").fadeOut(1000).fadeIn(1000)
+                         // $(".more2").slideDown("slow")
+                    });
+                    $(".nxt-bt").click(function(){
+                         $(".more").stop()
+                       
+                    });
+               });
+          </script>
+          <script src="jquery-3.7.1.js"></script>
+          
+</body>
+</html>
